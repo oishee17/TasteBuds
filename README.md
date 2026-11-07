@@ -1,4 +1,4 @@
-# Screenshot Match
+# TasteBuds - Zomato Clone
 
 Implement exactly the screenshot and nothing else
 
