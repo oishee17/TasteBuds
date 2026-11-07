@@ -7,7 +7,7 @@ import { allCuisines, filterRestaurants, restaurants } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/restaurants")({
-  validateSearch: (s: Record<string, unknown>) => ({ q: typeof s.q === "string" ? s.q : "" }),
+  validateSearch: (s: Record<string, unknown>) => ({ q: typeof s["q"] === "string" ? s["q"] : "" }),
   head: () => ({
     meta: [
       { title: "Restaurants near you — Zomato Clone" },

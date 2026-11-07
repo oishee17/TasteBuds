@@ -35,7 +35,7 @@ export type Restaurant = {
   votes: number;
   costForTwo: number;
   deliveryTime: number;
-  offer?: string;
+  offer?: string | undefined;
   locality: string;
   address: string;
   hours: string;
@@ -237,7 +237,7 @@ const fmtHour = (h: number) => {
 
 export const restaurants: Restaurant[] = seeds.map((s, i) => {
   const id = s.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-  const tpl = menus[s.menu];
+  const tpl = menus[s.menu] ?? {};
   const menu: MenuItem[] = [];
   Object.entries(tpl).forEach(([category, items]) =>
     items.forEach(([name, price, description, veg], j) =>
@@ -245,7 +245,7 @@ export const restaurants: Restaurant[] = seeds.map((s, i) => {
     ),
   );
   const reviews: Review[] = Array.from({ length: 4 }, (_, k) => {
-    const [user, rating, comment] = reviewPool[(i + k * 3) % reviewPool.length];
+    const [user, rating, comment] = reviewPool[(i + k * 3) % reviewPool.length]!;
     return { id: `${id}-r${k}`, user, rating, comment, date: `${(k * 5 + i) % 27 + 1} Oct 2026` };
   });
   return {

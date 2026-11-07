@@ -50,7 +50,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const add: Store["add"] = (item, restaurantId, restaurantName) =>
     setCart((c) => {
-      const base = c.length && c[0].restaurantId !== restaurantId ? [] : c;
+      const base = c[0] && c[0].restaurantId !== restaurantId ? [] : c;
       const found = base.find((l) => l.item.id === item.id);
       if (found) return base.map((l) => (l.item.id === item.id ? { ...l, qty: l.qty + 1 } : l));
       return [...base, { item, qty: 1, restaurantId, restaurantName }];

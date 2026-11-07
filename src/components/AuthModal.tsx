@@ -17,7 +17,7 @@ export function AuthModal() {
     if (signup && name.trim().length < 2) return setError("Please enter your full name");
     if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Please enter a valid email");
     if (password.length < 6) return setError("Password must be at least 6 characters");
-    const display = signup ? name.trim() : email.split("@")[0];
+    const display = signup ? name.trim() : (email.split("@")[0] ?? email);
     setUser({ name: display, email });
     toast.success(signup ? `Welcome to Zomato, ${display}!` : `Welcome back, ${display}!`);
     setAuthMode(null); setError(""); setPassword("");
