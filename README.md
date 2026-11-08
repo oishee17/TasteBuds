@@ -1,4 +1,4 @@
-# 🍽️ TasteBuds – Food Discovery & Ordering Platform
+# 🍽️ TasteBuds – Food Ordering Platform
 
 **TasteBuds** is a responsive, interactive food discovery and ordering web application inspired by Zomato. It allows users to explore restaurants, discover different cuisines, browse food menus, manage their shopping carts, and experience a simplified online food ordering process.
 
