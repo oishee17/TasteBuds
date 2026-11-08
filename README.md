@@ -1,8 +1,8 @@
 # 🍽️ TasteBuds – Food Ordering Platform
 
-**TasteBuds** is a responsive, interactive food discovery and ordering web application inspired by Zomato. It allows users to explore restaurants, discover different cuisines, browse food menus, manage their shopping carts, and experience a simplified online food ordering process.
+**TasteBuds** is a responsive, interactive food discovery and ordering web application inspired by **Zomato**. It allows users to explore restaurants, discover different cuisines, browse food menus, manage their shopping carts and experience a simplified online food ordering process.
 
-Built using modern frontend technologies, TasteBuds focuses on providing an intuitive user interface, smooth navigation, and an engaging restaurant discovery experience.
+Built using modern frontend technologies, TasteBuds focuses on providing an intuitive user interface, smooth navigation and an engaging restaurant discovery experience.
 
 ---
 
@@ -10,15 +10,15 @@ Built using modern frontend technologies, TasteBuds focuses on providing an intu
 
 ### 🏠 1. Interactive Homepage
 - Attractive landing page with a restaurant discovery interface.
-- Search functionality to find restaurants, cuisines, and dishes.
+- Search functionality to find restaurants, cuisines and dishes.
 - City selection to personalize the discovery experience.
 - Explore popular localities and trending restaurants.
-- Dedicated sections for online ordering, dining, and nightlife.
+- Dedicated sections for online ordering, dining and nightlife.
 
 ### 🔍 2. Restaurant Discovery & Search
 - Browse a collection of restaurants with detailed information.
-- View restaurant ratings, cuisines, estimated delivery times, and average costs.
-- Search restaurants by name, cuisine, or food items.
+- View restaurant ratings, cuisines, estimated delivery times and average costs.
+- Search restaurants by name, cuisine or food items.
 - Explore restaurants through an interactive listing interface.
 
 ### 🎯 3. Advanced Filtering
@@ -31,7 +31,7 @@ Users can refine their restaurant search using multiple filters:
 
 ### 🍕 4. Restaurant Details & Menu
 - Dedicated pages for individual restaurants.
-- Restaurant overview, address, operating hours, and ratings.
+- Restaurant overview, address, operating hours and ratings.
 - Browse categorized food menus.
 - Identify vegetarian and non-vegetarian food items.
 - Discover recommended and bestselling dishes.
@@ -204,7 +204,7 @@ http://localhost:3000
 
 ## 📝 Project Notes
 
-- TasteBuds currently uses locally defined sample restaurant, menu, and review data.
+- TasteBuds currently uses locally defined sample restaurant, menu and review data.
 - Authentication and order placement are implemented as frontend demonstrations.
 - No live payment gateway or production backend integration is currently configured.
 - The application is intended as a demonstration of an interactive food discovery and ordering platform.
@@ -220,7 +220,7 @@ This project provides practical experience with:
 - Implementing client-side routing and navigation.
 - Managing application state and user interactions.
 - Working with TypeScript and modern frontend tooling.
-- Creating interactive search, filtering, and shopping cart functionalities.
+- Creating interactive search, filtering and shopping cart functionalities.
 - Designing intuitive and user-friendly interfaces.
 
 ---
